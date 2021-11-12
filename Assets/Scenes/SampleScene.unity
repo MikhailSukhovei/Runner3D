@@ -337,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 0, y: 5, z: -15}
+  m_LocalPosition: {x: 0, y: 10, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -386,9 +386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 538474376444693018, guid: 80f28fa40833e4c49b49a62ac6194443, type: 3}
   - {fileID: 2907920118683416292, guid: 40520178fc688514d93e2461aeb8c192, type: 3}
-  - {fileID: 3966960665485400476, guid: 19b43db0462884e4786805189eff5ec2, type: 3}
+  - {fileID: 538474376444693018, guid: 80f28fa40833e4c49b49a62ac6194443, type: 3}
   player: {fileID: 2109980344}
 --- !u!4 &1620162742
 Transform:
@@ -437,10 +436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c9f301860b20b41b9c933bd5a7b473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
-  jumpForce: 10
+  speed: 50
+  jumpForce: 15
   gravity: -20
-  lineDistance: 3
+  lineDistance: 6
 --- !u!143 &2109980340
 CharacterController:
   m_ObjectHideFlags: 0
