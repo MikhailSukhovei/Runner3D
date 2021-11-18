@@ -7,7 +7,7 @@ public class TileGenerator : MonoBehaviour
     public GameObject[] tilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
-    private float tileLength = 100;
+    private float tileLength = 50;
 
     [SerializeField] private Transform player;
     private int startTiles = 6;
