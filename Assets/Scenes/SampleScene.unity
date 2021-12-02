@@ -831,8 +831,7 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 538474376444693018, guid: 80f28fa40833e4c49b49a62ac6194443, type: 3}
   carPrefabs:
-  - {fileID: 919132149155446097, guid: 40db59db8cdce6c458d4908ee7538df2, type: 3}
-  - {fileID: 919132149155446097, guid: 78d1654694a1fef4bb8d62c544ec0786, type: 3}
+  - {fileID: 7246308647004801671, guid: 84611676b475b1141a4a6667834e9e2b, type: 3}
   tileLength: 50
   car_per_tile: 3
   startTiles: 6

@@ -22,6 +22,8 @@ public class RandomTileGenerator : MonoBehaviour
         player_transform = player_object.GetComponent<Transform>();
         player_controller = player_object.GetComponent<PlayerController>();
 
+        SpawnEmptyTile(0);
+
         for (int i = 0; i < startTiles; i++)
         {
             SpawnTile(Random.Range(0, tilePrefabs.Length));
@@ -35,6 +37,14 @@ public class RandomTileGenerator : MonoBehaviour
             SpawnTile(Random.Range(0, tilePrefabs.Length));
             DeleteTile();
         }
+    }
+
+    private void SpawnEmptyTile(int tileIndex)
+    {
+        GameObject nextTile = Instantiate(tilePrefabs[tileIndex], transform.forward * spawnPos, transform.rotation);
+        activeTiles.Add(nextTile);
+
+        spawnPos += tileLength;
     }
 
     private void SpawnTile(int tileIndex)
@@ -51,6 +61,7 @@ public class RandomTileGenerator : MonoBehaviour
             int car_shift = Random.Range(-1, 2);  // random shift -1(left), 0(center), +1(right)
             int forward_shift = i - (int)(car_per_tile / 2);  // (int)(3 / 2) = 1, (int)(4 / 2) = 2
             GameObject nextCar = Instantiate(carPrefabs[Random.Range(0, carPrefabs.Length)], transform.forward * (spawnPos + forward_shift * tileLength / car_per_tile) + car_shift * transform.right * player_controller.lineDistance, transform.rotation);
+            nextCar.transform.rotation = transform.rotation;
             activeCars.Add(nextCar);
         }
 

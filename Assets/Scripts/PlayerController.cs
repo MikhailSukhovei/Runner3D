@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 dir;
-    [SerializeField] private int speed;
+    [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
     [SerializeField] private GameObject losePanel;
@@ -70,6 +70,8 @@ public class PlayerController : MonoBehaviour
         {
             controller.Move(diff);
         }
+
+        speed += 0.1f * Time.deltaTime;
     }
 
     private void Jump()
