@@ -833,7 +833,9 @@ MonoBehaviour:
   carPrefabs:
   - {fileID: 919132149155446097, guid: 40db59db8cdce6c458d4908ee7538df2, type: 3}
   - {fileID: 919132149155446097, guid: 78d1654694a1fef4bb8d62c544ec0786, type: 3}
-  player: {fileID: 2109980344}
+  tileLength: 50
+  car_per_tile: 3
+  startTiles: 6
   player_object: {fileID: 2109980338}
 --- !u!4 &2064176580
 Transform:
